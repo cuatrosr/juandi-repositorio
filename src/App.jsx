@@ -12,10 +12,34 @@ import tambores from "./assets/sticker_bongo_1.png";
 import ellipse from "./assets/Ellipse_1.png";
 import estudio from "./assets/Estudio_3.png";
 import card from "./assets/cuadro_de_texto.png";
-import contacto from "./assets/info_contacto.png";
+import contacto from "./assets/frame_contacto.png";
+import mkc5 from "./assets/circuito_reverb1_1.png";
+import piano5 from "./assets/sticker_piano_5.png";
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [left, setLeft] = useState(false);
+  const [center, setCenter] = useState(false);
+  const [right, setRight] = useState(false);
+  function playLeft() {
+    let leftVid = document.getElementById("left-vid");
+    if (!left) leftVid.play();
+    else leftVid.pause();
+    setLeft(!left);
+  }
+  function playCenter() {
+    let leftVid = document.getElementById("center-vid");
+    if (!center) leftVid.play();
+    else leftVid.pause();
+    setCenter(!center);
+  }
+  function playRight() {
+    let leftVid = document.getElementById("right-vid");
+    if (!right) leftVid.play();
+    else leftVid.pause();
+    setRight(!right);
+  }
   return (
     <>
       <header>
@@ -26,8 +50,8 @@ function App() {
         <img src={foto} className="foto" />
         <img src={root} className="root" />
       </header>
-      <section>
-        <div id="about" className="about">
+      <section id="about">
+        <div className="about">
           <div>
             <img src={flor1} className="flor1" />
             <img src={flor2} className="flor2" />
@@ -73,9 +97,119 @@ function App() {
           </div>
         </div>
       </section>
-      <section>
-        <div id="contact" className="contact">
-          <img src={contacto} className="contacto" />
+      <section id="work">
+        <img src={mkc5} className="mck5" />
+        <img src={piano5} className="piano5" />
+        <div className="flex-r">
+          <p className="p1">Escucha aquí algo de mi caos</p>
+          <div className="flex-rc">
+            <div className="test">
+              <div className="rc">
+                <video
+                  id="left-vid"
+                  className="left-video"
+                  width="320"
+                  height="176"
+                >
+                  <source src="left.mp4" type="video/mp4" />
+                </video>
+                <p>Me gusta lo urbano</p>
+                <button
+                  className="button-left"
+                  onClick={playLeft}
+                  type="button"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    viewBox="0 0 85 81"
+                    fill="none"
+                  >
+                    <path
+                      d="M77.4706 36.1699C80.8039 38.0944 80.8039 42.9056 77.4706 44.8301L31.7206 71.2439C28.3873 73.1684 24.2206 70.7628 24.2206 66.9138L24.2206 14.0862C24.2206 10.2372 28.3872 7.8316 31.7206 9.7561L77.4706 36.1699Z"
+                      fill="#D9D9D9"
+                    />
+                    <rect y="7" width="19" height="66" rx="5" fill="#D9D9D9" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div className="test">
+              <div className="rc">
+                <video
+                  id="center-vid"
+                  className="center-video"
+                  width="320"
+                  height="176"
+                >
+                  <source src="center.mp4" type="video/mp4" />
+                </video>
+                <p>O algo bien tranqui</p>
+                <button
+                  className="button-left"
+                  onClick={playCenter}
+                  type="button"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    viewBox="0 0 85 81"
+                    fill="none"
+                  >
+                    <path
+                      d="M77.4706 36.1699C80.8039 38.0944 80.8039 42.9056 77.4706 44.8301L31.7206 71.2439C28.3873 73.1684 24.2206 70.7628 24.2206 66.9138L24.2206 14.0862C24.2206 10.2372 28.3872 7.8316 31.7206 9.7561L77.4706 36.1699Z"
+                      fill="#D9D9D9"
+                    />
+                    <rect y="7" width="19" height="66" rx="5" fill="#D9D9D9" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div className="test">
+              <div className="rc">
+                <video
+                  id="right-vid"
+                  className="left-video"
+                  width="320"
+                  height="176"
+                >
+                  <source src="right.mp4" type="video/mp4" />
+                </video>
+                <p>Tambien hago arreglos</p>
+                <button
+                  className="button-left"
+                  onClick={playRight}
+                  type="button"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    viewBox="0 0 85 81"
+                    fill="none"
+                  >
+                    <path
+                      d="M77.4706 36.1699C80.8039 38.0944 80.8039 42.9056 77.4706 44.8301L31.7206 71.2439C28.3873 73.1684 24.2206 70.7628 24.2206 66.9138L24.2206 14.0862C24.2206 10.2372 28.3872 7.8316 31.7206 9.7561L77.4706 36.1699Z"
+                      fill="#D9D9D9"
+                    />
+                    <rect y="7" width="19" height="66" rx="5" fill="#D9D9D9" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <img src={contacto} className="contacto" />
+        <div className="text-contact">
+          Contacto
+          <br />
+          <a href="mailto:juan.largo205@gmail.com">juan.largo205@gmail.com</a>
+          <br />
+          <a href="https://linktr.ee/Objo20">https://linktr.ee/Objo20</a>
         </div>
       </section>
       <nav>
@@ -119,7 +253,7 @@ function App() {
               </div>
             </li>
             <li>
-              <a href="#contact">Mi trabajo</a>
+              <a href="#work">Mi trabajo</a>
             </li>
             <li>
               <a href="#contact">Contacto</a>

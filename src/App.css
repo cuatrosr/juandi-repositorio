@@ -170,6 +170,7 @@ section {
   right: 0;
   margin: auto;
   height: 220px;
+  opacity: 0.8;
 }
 
 .about {
@@ -205,10 +206,126 @@ section {
   height: 400px;
 }
 
-.contact {
+.work {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  text-align: center;
   justify-items: center;
 }
 
-.contact .contacto {
+.mck5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  opacity: 0.8;
+  height: 200px;
+}
+
+.piano5 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: auto;
+  transform: rotate(deg);
   height: 350px;
+}
+
+.contact {
+  position: relative;
+  text-align: center;
+  justify-items: center;
+}
+
+.contacto {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 350px;
+}
+
+.text-contact {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #042187;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.text-contact a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #042187;
+}
+
+.rc {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.left-video {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.center-video {
+  width: 200px;
+  height: 200px;
+  margin-top: 30%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.rc p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.button-left {
+  background: transparent;
+  border-color: transparent;
+  width: 50px;
+  height: 50px;
+}
+
+.flex-r {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-r .p1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.flex-rc {
+  position: relative;
+  width: 100vw;
+  height: 56%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+
+.test {
+  height: 100%;
 }
