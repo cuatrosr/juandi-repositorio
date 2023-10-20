@@ -1,0 +1,206 @@
+#root {
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 3.5rem;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #042187;
+}
+
+#square {
+  height: 60px;
+  width: 60px;
+  background: #9ac54b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.foto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 323px;
+  height: 426px;
+}
+
+.piano {
+  position: absolute;
+  top: 4%;
+  bottom: 0;
+  right: 25%;
+  margin: auto;
+  height: 426px;
+}
+
+.guitarra {
+  position: absolute;
+  top: 4%;
+  bottom: 0;
+  left: 25%;
+  margin: auto;
+  height: 426px;
+}
+
+.mkc1 {
+  position: absolute;
+  bottom: 10%;
+  left: 21.5%;
+  margin: auto;
+  height: 226px;
+}
+
+.mkc2 {
+  position: absolute;
+  top: 48%;
+  bottom: 0;
+  right: 24%;
+  margin: auto;
+  height: 260px;
+}
+
+.root {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 4.5%;
+  margin: auto;
+  height: 120px;
+  width: 440px;
+}
+
+.flor1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  margin: auto;
+  height: 100%;
+}
+
+.flor2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.8;
+  margin: auto;
+  height: 100%;
+}
+
+#center-square {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 30vh;
+  width: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light {
+  background: lightgray 50% / cover no-repeat;
+}
+
+.mkc3 {
+  position: absolute;
+  top: 13%;
+  left: 10%;
+  margin: auto;
+  height: 280px;
+}
+
+.mkc4 {
+  position: absolute;
+  bottom: 13%;
+  right: 10%;
+  margin: auto;
+  height: 250px;
+}
+
+.tambores {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 220px;
+}
+
+.about {
+  justify-items: center;
+}
+
+.about .about-me {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-around;
+}
+
+.about .about-me .two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.about .about-me .ellipse {
+  height: 150px;
+}
+
+.about .about-me .estudio {
+  height: 200px;
+}
+
+.about .about-me .card {
+  height: 400px;
+}
