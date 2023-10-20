@@ -12,6 +12,7 @@ import tambores from "./assets/sticker_bongo_1.png";
 import ellipse from "./assets/Ellipse_1.png";
 import estudio from "./assets/Estudio_3.png";
 import card from "./assets/cuadro_de_texto.png";
+import contacto from "./assets/info_contacto.png";
 import "./App.css";
 
 function App() {
@@ -72,6 +73,11 @@ function App() {
           </div>
         </div>
       </section>
+      <section>
+        <div id="contact" className="contact">
+          <img src={contacto} className="contacto" />
+        </div>
+      </section>
       <nav>
         <div>
           <ul id="navbar">
@@ -113,10 +119,10 @@ function App() {
               </div>
             </li>
             <li>
-              <a href="#">Mi trabajo</a>
+              <a href="#contact">Mi trabajo</a>
             </li>
             <li>
-              <a href="#">Contacto</a>
+              <a href="#contact">Contacto</a>
             </li>
           </ul>
         </div>

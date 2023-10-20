@@ -204,3 +204,11 @@ section {
 .about .about-me .card {
   height: 400px;
 }
+
+.contact {
+  justify-items: center;
+}
+
+.contact .contacto {
+  height: 350px;
+}
